@@ -52,7 +52,7 @@ credit-card-validation/
 
 ### Prerequisites
 
-- [Go](https://golang.org/dl/) 1.20 or later
+- [Go](https://golang.org/dl/) 1.24 or later
 - [Docker](https://www.docker.com/get-started)
 
 ### Installation
@@ -64,11 +64,6 @@ credit-card-validation/
    cd credit-card-validation
    ```
 
-2. **Install dependencies:**
-
-   ```bash
-   go mod tidy
-   ```
 
 ## Usage
 
@@ -128,17 +123,17 @@ The service will be accessible at `http://localhost:8080`.
 1. **Run the Docker container:**
 
    ```bash
-   docker run -p 8080:8080 credit-card-validation-app
+   docker run -p 3000:8080 credit-card-validation-app
    ```
 
-The service will be accessible at `http://localhost:8080`.
+The service will be accessible at `http://localhost:3000`.
 
 ## Testing
 
 To test the API endpoint using `curl`:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"card_number": "4111111111111111"}' http://localhost:8080/validate
+curl -X POST -H "Content-Type: application/json" -d '{"card_number": "4111111111111111"}' http://localhost:3000/validate
 ```
 
 ## Contributing
