@@ -28,7 +28,6 @@ The Credit Card Validation Service offers an API endpoint to verify the validity
 
 ### Project Structure
 
-```
 credit-card-validation/
 ├── main.go
 ├── internal/
@@ -39,7 +38,7 @@ credit-card-validation/
 ├── go.mod
 ├── Dockerfile
 └── README.md
-```
+
 
 - **main.go**: Entry point of the application.
 - **internal/luhn/luhn.go**: Contains the Luhn algorithm implementation.
